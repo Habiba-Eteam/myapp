@@ -7,7 +7,7 @@ function ProductsList() {
   const [categories, setCategories] = useState([]);
 
   const getProducts = () => {
-    fetch(habiba)
+    fetch(`habiba`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   };
